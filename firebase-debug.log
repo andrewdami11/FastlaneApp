@@ -1,0 +1,36 @@
+[debug] [2020-10-07T14:33:35.467Z] ----------------------------------------------------------------------
+[debug] [2020-10-07T14:33:35.469Z] Command:       /Users/andrewajube/.nvm/versions/node/v10.17.0/bin/node /Users/andrewajube/.nvm/versions/node/v10.17.0/bin/firebase projects:list
+[debug] [2020-10-07T14:33:35.469Z] CLI Version:   8.12.0
+[debug] [2020-10-07T14:33:35.469Z] Platform:      darwin
+[debug] [2020-10-07T14:33:35.469Z] Node Version:  v10.17.0
+[debug] [2020-10-07T14:33:35.470Z] Time:          Wed Oct 07 2020 15:33:35 GMT+0100 (British Summer Time)
+[debug] [2020-10-07T14:33:35.470Z] ----------------------------------------------------------------------
+[debug] [2020-10-07T14:33:35.470Z] 
+[debug] [2020-10-07T14:33:35.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-07T14:33:35.475Z] > authorizing via FIREBASE_TOKEN environment variable
+[debug] [2020-10-07T14:33:35.480Z] > refreshing access token with scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-07T14:33:35.481Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-07T14:33:35.673Z] <<< HTTP RESPONSE 400 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 07 Oct 2020 14:33:35 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-07T14:33:35.675Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=1000  
+ 
+[debug] [2020-10-07T14:33:35.826Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 07 Oct 2020 14:33:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-07T14:33:35.826Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2020-10-07T14:33:35.829Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-10-07T14:33:35.832Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/andrewajube/.nvm/versions/node/v10.17.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/andrewajube/.nvm/versions/node/v10.17.0/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/andrewajube/.nvm/versions/node/v10.17.0/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at Request.<anonymous> (/Users/andrewajube/.nvm/versions/node/v10.17.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:198:13)
+    at Request.EventEmitter.emit (domain.js:448:20)
+    at IncomingMessage.<anonymous> (/Users/andrewajube/.nvm/versions/node/v10.17.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:286:20)
+    at IncomingMessage.emit (events.js:203:15)
+    at IncomingMessage.EventEmitter.emit (domain.js:448:20)
+    at endReadableNT (_stream_readable.js:1143:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

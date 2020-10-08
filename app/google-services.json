@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "454174307909",
+    "firebase_url": "https://fastlaneapp-covvered.firebaseio.com",
+    "project_id": "fastlaneapp-covvered",
+    "storage_bucket": "fastlaneapp-covvered.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454174307909:android:04fc1b8d9cc0bcc8d7552c",
+        "android_client_info": {
+          "package_name": "com.example.fastlaneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454174307909-4g9f2k9v8d8umdp0fqs95eblarcrs3un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2GZc180H3DAJ4wsvkmQrum-0fhKeMrxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454174307909-4g9f2k9v8d8umdp0fqs95eblarcrs3un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
