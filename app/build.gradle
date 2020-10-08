@@ -6,7 +6,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     signingConfigs {
         fastlane_release_config {
-            storeFile file('/Users/andrewajube/Documents/Covvered/FastlaneApp/Untitled')
+            storeFile file('Untitled')
             keyAlias 'fastlaneapp_release_key'
             storePassword 'fastlaneapp'
             keyPassword 'fastlaneapp'
