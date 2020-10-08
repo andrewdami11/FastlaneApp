@@ -27,7 +27,7 @@ platform :android do
     firebase_app_distribution(
                 app: "1:454174307909:android:04fc1b8d9cc0bcc8d7552c",
                 testers: "ajube92@gmail.com, andrew.ajube@and.digital",
-                service_credentials_file: "$rootDir/google-services.json"
+                firebase_cli_token: "1//03BdbJQj9-iRsCgYIARAAGAMSNwF-L9IrYjp3K2NJ0cL5aW7rFeoyLIpzq2jzZBxbSUJVq2H7OzydNgVy1rNXe1n6Gwj2spVMJjU"
             )
 
     # sh "your_script.sh"
