@@ -4,6 +4,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    signingConfigs {
+        fastlane_release_config {
+            storeFile file('/Users/andrewajube/Documents/Covvered/FastlaneApp/Untitled')
+            keyAlias 'fastlaneapp_release_key'
+            storePassword 'fastlaneapp'
+            keyPassword 'fastlaneapp'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "30.0.2"
 
@@ -21,6 +29,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.fastlane_release_config
         }
     }
     compileOptions {
